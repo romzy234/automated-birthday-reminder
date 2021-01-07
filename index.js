@@ -6,6 +6,18 @@ var dateYear = new Date().getFullYear();
 var dateMonth = new Date().getMonth(); // start counting from 0
 var dateDay = new Date().getDate();// start counting from 1
 
+/* The Schema Which The Database Follow 
+
+    {
+        'id' : number,
+        'name' : string,
+        'dob' : string (day - month),
+        'email' : string 
+    },
+ * You can Use Any type of schema (This is the method I preferred)
+
+*/
+
 /// database goes here 
 var users = [
     {
@@ -51,7 +63,7 @@ cron.schedule('* * 07 * * *', () => {
     // looping through the users
     users.forEach(element => {
         // Spliting the Date of Birth (DOB) 
-        // to get the Month And Year 
+        // to get the Month And Day
         let d = element.dob.split('-')
         let dM = +d[1]  // For the month
         let dD = +d[0] // for the day 
