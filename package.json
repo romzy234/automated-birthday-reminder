@@ -1,0 +1,21 @@
+{
+  "name": "birthday",
+  "version": "1.0.0",
+  "description": "Birthday Remember Application using Nodejs  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "keywords": [
+    "Node",
+    "birthday",
+    "Nodemailer"
+  ],
+  "author": "Cyril Ogoh",
+  "license": "ISC",
+  "dependencies": {
+    "node-cron": "^2.0.3",
+    "nodemailer": "^6.4.17"
+  }
+}
