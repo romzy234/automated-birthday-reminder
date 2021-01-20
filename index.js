@@ -77,7 +77,7 @@ cron.schedule('* * 07 * * *', () => {
             };
             return transporter.sendMail(mailOptions, (error, data) => {
                 if (error) {
-                    console.log(error)
+                    console.log(error)// handle the error here
                     return
                 }
             });
